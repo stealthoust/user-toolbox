@@ -16,7 +16,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("toolbox.fxml"));
         primaryStage.setTitle("VaBank");
-        primaryStage.setScene(new Scene(root, 650, 552));
+        primaryStage.setScene(new Scene(root, 905, 495));
         primaryStage.show();
         primaryStage.setResizable(false);
     }
