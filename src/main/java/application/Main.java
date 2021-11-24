@@ -20,9 +20,10 @@ import java.net.http.HttpResponse;
 public class Main extends Application {
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        launch(args);
 
-        System.out.println(getPogoda.getP().name);
+
+        System.out.println(getPogoda.getPogoda().visibility);
+        launch(args);
     }
 
     @Override
