@@ -16,6 +16,7 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.sql.SQLOutput;
 
 public class Main extends Application {
 
@@ -23,6 +24,12 @@ public class Main extends Application {
 
 
         System.out.println(getPogoda.getPogoda().visibility);
+        var Kurs123 = new getWaluta();
+        double euro = Kurs123.getKurs("EUR");
+        double dolar = Kurs123.getKurs("USD");
+        System.out.println(euro);
+        System.out.println(dolar);
+
         launch(args);
     }
 
