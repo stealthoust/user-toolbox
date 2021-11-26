@@ -20,10 +20,14 @@ import java.sql.SQLOutput;
 
 public class Main extends Application {
 
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) throws Exception {
 
 
         System.out.println(getPogoda.getPogoda().visibility);
+        System.out.println(getCovid.getNewDeathsToday() + " Zgony dzisiaj");
+        System.out.println(getCovid.getAgeRangesToday() + " przidzial");
+        System.out.println(getCovid.getDeathsToday() + " Zgony przedzial");
+        System.out.println(getCovid.getCovidStatistic().reportDate + " Data raportu");
         var Kurs123 = new getWaluta();
         double euro = Kurs123.getKurs("EUR");
         double dolar = Kurs123.getKurs("USD");
