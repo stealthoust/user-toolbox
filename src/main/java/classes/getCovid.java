@@ -96,30 +96,30 @@ public class getCovid {
 
         return infections.today.deathAgeRanges.get(0).deaths;
     }
-//    public static int getDeathsGenderMale() throws Exception{ Do naprawy
-//        Gson gson = new Gson();
-//        var client = HttpClient.newHttpClient();
-//
-//        var request = HttpRequest.newBuilder(URI.create(BaseURL )).build();
-//        var response = client.send(request, HttpResponse.BodyHandlers.ofString());
-//
-//        String odpowiedz = response.body();
-//        Covid infections = gson.fromJson(odpowiedz,Covid.class);
-//
-//        return infections.deathGender.male;
-//    }
-//    public static int getDeathsGenderFemale() throws Exception{
-//        Gson gson = new Gson();
-//        var client = HttpClient.newHttpClient();
-//
-//        var request = HttpRequest.newBuilder(URI.create(BaseURL )).build();
-//        var response = client.send(request, HttpResponse.BodyHandlers.ofString());
-//
-//        String odpowiedz = response.body();
-//        Covid infections = gson.fromJson(odpowiedz,Covid.class);
-//
-//        return infections.deathGender.female;
-//    }
+    public static int getDeathsGenderMale() throws Exception{
+        Gson gson = new Gson();
+        var client = HttpClient.newHttpClient();
+
+        var request = HttpRequest.newBuilder(URI.create(BaseURL )).build();
+        var response = client.send(request, HttpResponse.BodyHandlers.ofString());
+
+        String odpowiedz = response.body();
+        Covid infections = gson.fromJson(odpowiedz,Covid.class);
+
+        return infections.today.deathGender.male;
+    }
+    public static int getDeathsGenderFemale() throws Exception{
+        Gson gson = new Gson();
+        var client = HttpClient.newHttpClient();
+
+        var request = HttpRequest.newBuilder(URI.create(BaseURL )).build();
+        var response = client.send(request, HttpResponse.BodyHandlers.ofString());
+
+        String odpowiedz = response.body();
+        Covid infections = gson.fromJson(odpowiedz,Covid.class);
+
+        return infections.today.deathGender.female;
+    }
 
     public static Covid getCovidStatistic() throws Exception{
         Gson gson = new Gson();

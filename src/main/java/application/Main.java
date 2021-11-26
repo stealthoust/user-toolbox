@@ -24,10 +24,10 @@ public class Main extends Application {
 
 
         System.out.println(getPogoda.getPogoda().visibility);
-        System.out.println(getCovid.getNewDeathsToday() + " Zgony dzisiaj");
-        System.out.println(getCovid.getAgeRangesToday() + " przidzial");
-        System.out.println(getCovid.getDeathsToday() + " Zgony przedzial");
-        System.out.println(getCovid.getCovidStatistic().reportDate + " Data raportu");
+        int test = getCovid.getNewInfectionsToday();
+        System.out.println(test + " TEST");
+        System.out.println(getCovid.getDeathsGenderMale() + " TEST 2");
+        System.out.println(getCovid.getDeathsGenderFemale() + " TEST 3");
         var Kurs123 = new getWaluta();
         double euro = Kurs123.getKurs("EUR");
         double dolar = Kurs123.getKurs("USD");
