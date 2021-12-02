@@ -34,6 +34,7 @@ public class Main extends Application {
         System.out.println(euro);
         System.out.println(dolar);
 
+
         launch(args);
     }
 
