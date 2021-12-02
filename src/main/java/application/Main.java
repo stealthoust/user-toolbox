@@ -23,7 +23,7 @@ public class Main extends Application {
     public static void main(String[] args) throws Exception {
 
 
-        System.out.println(getPogoda.getPogoda().visibility);
+
         int test = getCovid.getNewInfectionsToday();
         System.out.println(test + " TEST");
         System.out.println(getCovid.getDeathsGenderMale() + " TEST 2");
