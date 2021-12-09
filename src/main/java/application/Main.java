@@ -24,6 +24,7 @@ public class Main extends Application {
 
 
 
+        System.out.println("dupa "+getPogoda.getKraj()+" dupa");
         int test = getCovid.getNewInfectionsToday();
         System.out.println(test + " TEST");
         System.out.println(getCovid.getDeathsGenderMale() + " TEST 2");
@@ -35,14 +36,15 @@ public class Main extends Application {
         System.out.println(dolar);
 
 
+
         launch(args);
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("toolbox.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("weather.fxml"));
         primaryStage.setTitle("VaBank");
-        primaryStage.setScene(new Scene(root, 905, 495));
+        primaryStage.setScene(new Scene(root, 1042, 681));
         //primaryStage.initStyle(StageStyle.UNDECORATED); //Pasek zadan
         primaryStage.show();
         primaryStage.setResizable(false);

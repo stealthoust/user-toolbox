@@ -10,8 +10,8 @@ import java.net.http.HttpResponse;
 import java.util.List;
 
 public class getPogoda {
-
-    public static String BaseURL = "https://api.openweathermap.org/data/2.5/weather?q=rzesz%C3%B3w&appid=5f32855c2f658e2a0eca59c4302bb315&lang=pl";
+    public  static String nazwa="Jaroslaw";
+    public static String BaseURL = "https://api.openweathermap.org/data/2.5/weather?q="+nazwa+"&appid=5f32855c2f658e2a0eca59c4302bb315&lang=pl";
 
 
     public static String getOpis() throws IOException, InterruptedException //pobiera rozwinieta informacje na temat pogody , typu: broken clouds
@@ -108,5 +108,40 @@ public class getPogoda {
         return pogoda;
     }
 
+    public static int getCisnienie() throws IOException, InterruptedException {
+        Gson gson = new Gson();
+        var client = HttpClient.newHttpClient();
 
+        var request = HttpRequest.newBuilder(URI.create(BaseURL )).build();
+        var response = client.send(request, HttpResponse.BodyHandlers.ofString());
+
+        String odpowiedz = response.body();
+        Pogoda pogoda = gson.fromJson(odpowiedz, Pogoda.class);
+
+        return pogoda.main.pressure;
+    }
+    public static int getZachmurzenie() throws IOException, InterruptedException {
+        Gson gson = new Gson();
+        var client = HttpClient.newHttpClient();
+
+        var request = HttpRequest.newBuilder(URI.create(BaseURL )).build();
+        var response = client.send(request, HttpResponse.BodyHandlers.ofString());
+
+        String odpowiedz = response.body();
+        Pogoda pogoda = gson.fromJson(odpowiedz, Pogoda.class);
+
+        return pogoda.clouds.all;
+    }
+    public static int getWilgotnosc() throws IOException, InterruptedException {
+        Gson gson = new Gson();
+        var client = HttpClient.newHttpClient();
+
+        var request = HttpRequest.newBuilder(URI.create(BaseURL )).build();
+        var response = client.send(request, HttpResponse.BodyHandlers.ofString());
+
+        String odpowiedz = response.body();
+        Pogoda pogoda = gson.fromJson(odpowiedz, Pogoda.class);
+
+        return pogoda.main.humidity;
+    }
 }
