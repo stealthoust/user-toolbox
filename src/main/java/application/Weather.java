@@ -30,7 +30,7 @@ public class Weather implements Initializable {
 
     public Weather()
     {
-        this.miastoSet="Jaroslaw".toLowerCase();
+        this.miastoSet="Jaroslaw".toUpperCase();
     }
 private void reset()
 {
@@ -47,7 +47,7 @@ private void reset()
 }
 private void pokazPogode() throws IOException, InterruptedException {
     managerPogody.getPogoda();
-    miejscowoscLabel.setText(managerPogody.getMiasto().toLowerCase());
+    miejscowoscLabel.setText(managerPogody.getMiasto().toUpperCase());
     temperaturaLabel.setText(managerPogody.getTemperatura()+" C");
     dzienLabel.setText(managerPogody.getDzien().toUpperCase());
     opisLabel.setText(managerPogody.getOpis().toUpperCase());
