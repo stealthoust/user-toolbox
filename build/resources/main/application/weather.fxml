@@ -15,7 +15,7 @@
             <Image url="@../images/WEATHER_MY.jpg" />
          </image>
       </ImageView>
-      <Text fx:id="miejscowoscLabel" fill="#75ebc8" layoutX="323.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Miejscowosc" wrappingWidth="337.509765625">
+      <Text fx:id="miejscowoscLabel" fill="#75ebc8" layoutX="64.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Miejscowosc" wrappingWidth="337.509765625">
          <font>
             <Font size="59.0" />
          </font>
@@ -25,12 +25,12 @@
             <Font name="System Bold" size="34.0" />
          </font>
       </Text>
-      <Text fx:id="dzienLabel" fill="WHITE" layoutX="156.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DZIEN">
+      <Text fx:id="dzienLabel" fill="WHITE" layoutX="117.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DZIEN">
          <font>
             <Font size="39.0" />
          </font>
       </Text>
-      <ImageView fitHeight="213.0" fitWidth="208.0" layoutX="109.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="obraz" fitHeight="213.0" fitWidth="208.0" layoutX="109.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/01n.png" />
          </image>
@@ -40,7 +40,7 @@
             <Font name="System Bold" size="47.0" />
          </font>
       </Text>
-      <Text fx:id="opisLabel" fill="WHITE" layoutX="133.0" layoutY="555.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CZYSTE NIEBO">
+      <Text fx:id="opisLabel" fill="WHITE" layoutX="73.0" layoutY="561.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CZYSTE NIEBO">
          <font>
             <Font size="25.0" />
          </font>
@@ -50,7 +50,7 @@
             <Font name="System Bold" size="33.0" />
          </font>
       </Text>
-      <Text fill="#de6662" layoutX="619.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WIND SPEED:">
+      <Text fill="#de6662" layoutX="619.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRĘDKOŚĆ WIATRU">
          <font>
             <Font size="24.0" />
          </font>
@@ -86,7 +86,7 @@
          </font>
       </Text>
       <TextField fx:id="szukajMiejscowosc" alignment="CENTER" layoutX="417.0" layoutY="529.0" prefHeight="44.0" prefWidth="202.0" promptText="MIEJSCOWOSC" />
-      <Button fx:id="szukajButton" layoutX="464.0" layoutY="585.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="109.0" style="-fx-background-color: #de6662; -fx-background-radius: 15;" text="ZMIEN" />
+      <Button fx:id="szukajButton" layoutX="464.0" layoutY="585.0" mnemonicParsing="false" onAction="#ZmienPogode" prefHeight="44.0" prefWidth="109.0" style="-fx-background-color: #de6662; -fx-background-radius: 15;" text="ZMIEN" />
       <Text fx:id="zachmurzenieLabel" fill="WHITE" layoutX="869.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
          <font>
             <Font size="20.0" />

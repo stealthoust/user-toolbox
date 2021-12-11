@@ -24,7 +24,7 @@ public class Main extends Application {
 
 
 
-        System.out.println("dupa "+getPogoda.getKraj()+" dupa");
+
         int test = getCovid.getNewInfectionsToday();
         System.out.println(test + " TEST");
         System.out.println(getCovid.getDeathsGenderMale() + " TEST 2");
