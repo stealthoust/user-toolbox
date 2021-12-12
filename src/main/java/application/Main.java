@@ -25,7 +25,7 @@ public class Main extends Application {
 
 
 
-        int test = getCovid.getNewInfectionsToday();
+       /* int test = getCovid.getNewInfectionsToday();
         System.out.println(test + " TEST");
         System.out.println(getCovid.getDeathsGenderMale() + " TEST 2");
         System.out.println(getCovid.getDeathsGenderFemale() + " TEST 3");
@@ -33,7 +33,7 @@ public class Main extends Application {
         double euro = Kurs123.getKurs("EUR");
         double dolar = Kurs123.getKurs("USD");
         System.out.println(euro);
-        System.out.println(dolar);
+        System.out.println(dolar);*/
 
 
 
@@ -43,7 +43,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("weather.fxml"));
-        primaryStage.setTitle("VaBank");
+        primaryStage.setTitle("Przybornik uzytkownika");
         primaryStage.setScene(new Scene(root, 1042, 681));
         //primaryStage.initStyle(StageStyle.UNDECORATED); //Pasek zadan
         primaryStage.show();

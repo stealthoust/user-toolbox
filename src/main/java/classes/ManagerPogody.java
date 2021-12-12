@@ -58,10 +58,10 @@ public class ManagerPogody {
         this.dzien=df2.format(c.getTime());
         this.ikona=pogoda.weather.get(0).icon;
         this.opis=pogoda.weather.get(0).description;
-        this.predkoscWiatru=Double.toString(round(pogoda.wind.speed*1.609344,2))+" km/h";
-        this.zachmurzenie=Integer.toString(pogoda.clouds.all);
-        this.cisnienie=Integer.toString(pogoda.main.pressure);
-        this.wilgotnosc=Integer.toString(pogoda.main.humidity);
+        this.predkoscWiatru=Double.toString(pogoda.wind.speed)+" m/s";
+        this.zachmurzenie=Integer.toString(pogoda.clouds.all)+"%";
+        this.cisnienie=Integer.toString(pogoda.main.pressure)+" hpa";
+        this.wilgotnosc=Integer.toString(pogoda.main.humidity)+"%";
     }
 
     public String getMiasto() {
