@@ -146,6 +146,7 @@ else {
             ZmienOkno.zmienScene("toolbox.fxml", 905, 495, btn_waluty);
         }
         catch (Exception e){
+
             System.out.println("Błąd w wczytaniu okna");
         }
     }

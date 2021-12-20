@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="905.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="905.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Toolbox">
    <children>
       <BorderPane prefHeight="495.0" prefWidth="905.0">
          <left>
@@ -35,7 +35,7 @@
                         <Insets top="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="190.0" text="Pogoda" textFill="WHITE">
+                  <Button fx:id="btn_pogoda" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#okno_pogoda" prefHeight="50.0" prefWidth="190.0" text="Pogoda" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
