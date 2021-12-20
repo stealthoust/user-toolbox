@@ -3,6 +3,7 @@ package application;
 import classes.*;
 import javafx.animation.FadeTransition;
 import javafx.animation.PauseTransition;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -25,7 +26,7 @@ public class Weather implements Initializable {
     String miastoSet;
 
     @FXML
-    private Button szukajButton;
+    private Button szukajButton,btn_notatki,btn_waluty;
     @FXML
     private TextField szukajMiejscowosc;
     @FXML
@@ -52,6 +53,9 @@ private void reset()
     obraz.setImage(null);
 
 }
+
+
+
 private void pokazPogode() throws IOException, InterruptedException {
     managerPogody.getPogoda();
     miejscowoscLabel.setText(managerPogody.getMiasto().toUpperCase());
@@ -134,5 +138,25 @@ else {
     }
 
 
+    }
+
+    public void okno_waluta(ActionEvent actionEvent) {
+        try
+        {
+            ZmienOkno.zmienScene("toolbox.fxml", 905, 495, btn_waluty);
+        }
+        catch (Exception e){
+            System.out.println("Błąd w wczytaniu okna");
+        }
+    }
+
+    public void okno_notatki(ActionEvent actionEvent) {
+        try
+        {
+            ZmienOkno.zmienScene("toolbox.fxml", 905, 495, btn_notatki);
+        }
+        catch (Exception e){
+            System.out.println("Błąd w wczytaniu okna");
+        }
     }
 }
