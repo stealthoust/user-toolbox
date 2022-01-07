@@ -143,7 +143,7 @@ else {
     public void okno_waluta(ActionEvent actionEvent) {
         try
         {
-            ZmienOkno.zmienScene("toolbox.fxml", 905, 495, btn_waluty);
+            ZmienOkno.zmienScene("toolbox.fxml", 1234, 704, btn_waluty);
         }
         catch (Exception e){
 
@@ -154,7 +154,7 @@ else {
     public void okno_notatki(ActionEvent actionEvent) {
         try
         {
-            ZmienOkno.zmienScene("toolbox.fxml", 905, 495, btn_notatki);
+            ZmienOkno.zmienScene("toolbox.fxml", 1234, 704, btn_notatki);
         }
         catch (Exception e){
             System.out.println("Błąd w wczytaniu okna");

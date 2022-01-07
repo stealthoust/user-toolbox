@@ -1,13 +1,38 @@
-.button
-{
-    -fx-background-color:#449afc;
+#btn_covid{
+    -fx-background-color:#231c45;
     -fx-background-radius: 0em;
 }
-.button:hover
-{
-    -fx-background-color: #3180de;
+/*#btn_covid:hover{*/
+/*    -fx-background-color:#6b3da6;*/
+/*}*/
+/*#btn_covid:pressed{*/
+/*    -fx-background-color:#441d75;*/
+/*}*/
+
+
+#btn_waluta{
+    -fx-background-color:#985ee4;
+    -fx-background-radius: 0em;
 }
-.button:pressed
-{
-    -fx-background-color: #1768be;
+
+#btn_waluta:hover{
+    -fx-background-color:#6b3da6;
 }
+
+#btn_waluta:pressed{
+    -fx-background-color:#231c45;
+}
+
+
+#btn_pogoda{
+    -fx-background-color:#985ee4;
+    -fx-background-radius: 0em;
+}
+#btn_pogoda:hover{
+    -fx-background-color:#6b3da6;
+}
+
+#btn_pogoda:pressed{
+    -fx-background-color:#231c45;
+}
+

@@ -1,6 +1,7 @@
 package classes;
 
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -20,7 +21,8 @@ class deathAgeRanges{
 class Today{
     public int newInfections;
     public int newDeaths;
-    public List<deathAgeRanges>deathAgeRanges;
+    //public ArrayList < Object > deathAgeRanges = new ArrayList < Object > ();
+    public List<deathAgeRanges> deathAgeRanges;
     public deathGender deathGender;
 }
 class deathGender{
@@ -29,11 +31,13 @@ class deathGender{
 }
 
 
-public class Covid { //Wynik na calym swiecie | General
+public class Covid { //Klasa root
 
     public Date reportDate;
     public General general;
     public Today today;
+
+
 
 }
 
