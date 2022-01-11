@@ -1,4 +1,6 @@
-#btn_covid{
+/* Covid */
+
+#btn_ccovid{
     -fx-background-color:#231c45;
     -fx-background-radius: 0em;
 }
@@ -10,36 +12,70 @@
 /*}*/
 
 
-#btn_waluta{
+#btn_cwaluta{
     -fx-background-color:#985ee4;
     -fx-background-radius: 0em;
 }
 
-#btn_waluta:hover{
+#btn_cwaluta:hover{
     -fx-background-color:#6b3da6;
 }
 
-#btn_waluta:pressed{
+#btn_cwaluta:pressed{
     -fx-background-color:#231c45;
 }
 
 
-#btn_pogoda{
+#btn_cpogoda{
     -fx-background-color:#985ee4;
     -fx-background-radius: 0em;
 }
-#btn_pogoda:hover{
+#btn_cpogoda:hover{
     -fx-background-color:#6b3da6;
 }
 
-#btn_pogoda:pressed{
+#btn_cpogoda:pressed{
     -fx-background-color:#231c45;
 }
 
-#btn_notatki:hover{
+
+/* Pogoda */
+
+
+#btn_ppogoda{
+    -fx-background-color:#231c45;
+    -fx-background-radius: 0em;
+}
+/*#btn_covid:hover{*/
+/*    -fx-background-color:#6b3da6;*/
+/*}*/
+/*#btn_covid:pressed{*/
+/*    -fx-background-color:#441d75;*/
+/*}*/
+
+
+#btn_pwaluta{
+    -fx-background-color:#985ee4;
+    -fx-background-radius: 0em;
+}
+
+#btn_pwaluta:hover{
     -fx-background-color:#6b3da6;
 }
 
-#btn_waluty:hover{
+#btn_pwaluta:pressed{
+    -fx-background-color:#231c45;
+}
+
+
+#btn_pcovid{
+    -fx-background-color:#985ee4;
+    -fx-background-radius: 0em;
+}
+#btn_pcovid:hover{
     -fx-background-color:#6b3da6;
+}
+
+#btn_pcovid:pressed{
+    -fx-background-color:#231c45;
 }

@@ -13,13 +13,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="1234.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Toolbox">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Toolbox">
    <children>
       <BorderPane prefHeight="704.0" prefWidth="1234.0">
          <left>
             <VBox prefHeight="550.0" prefWidth="332.0" style="-fx-background-color: #985ee4;" stylesheets="@style.css" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="btn_covid" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" prefHeight="134.0" prefWidth="337.0" text="Covid" textFill="WHITE">
+                  <Button fx:id="btn_ccovid" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" prefHeight="134.0" prefWidth="337.0" text="Covid" textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="108.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -37,7 +37,7 @@
                         <Insets />
                      </VBox.margin>
                   </Button>
-                  <Button fx:id="btn_pogoda" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#okno_pogoda" prefHeight="86.0" prefWidth="336.0" text="Pogoda" textFill="WHITE">
+                  <Button fx:id="btn_cpogoda" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#okno_pogoda" prefHeight="86.0" prefWidth="336.0" text="Pogoda" textFill="WHITE">
                      <font>
                         <Font name="Arial" size="36.0" />
                      </font>
@@ -51,7 +51,7 @@
                      <VBox.margin>
                         <Insets />
                      </VBox.margin></Button>
-                  <Button fx:id="btn_waluta" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="336.0" styleClass="" text="Waluta" textFill="WHITE">
+                  <Button fx:id="btn_cwaluta" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="336.0" styleClass="" text="Waluta" textFill="WHITE">
                      <font>
                         <Font name="Arial" size="36.0" />
                      </font>
@@ -71,104 +71,104 @@
          <center>
             <VBox prefHeight="485.0" prefWidth="932.0" style="-fx-background-color: #7f5ac1;" BorderPane.alignment="CENTER">
                <children>
-                  <AnchorPane prefHeight="710.0" prefWidth="902.0">
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1068.0">
                      <children>
-                        <Text fx:id="generalDeaths" layoutX="40.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ogólna liczba zakarzeń" AnchorPane.bottomAnchor="522.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="588.11083984375" AnchorPane.topAnchor="143.0">
+                        <Text fx:id="generalDeaths" layoutX="116.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ogólna liczba zakarzeń:" AnchorPane.bottomAnchor="531.2236328125" AnchorPane.leftAnchor="116.0" AnchorPane.rightAnchor="660.6689453125" AnchorPane.topAnchor="142.8642578125">
                            <font>
                               <Font name="System Bold" size="27.0" />
                            </font>
                         </Text>
-                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="482.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="558.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../images/icons8_death_125px.png" />
                            </image>
                         </ImageView>
-                        <Text layoutX="317.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caly Swiat:">
+                        <Text layoutX="393.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caly Swiat:">
                            <font>
                               <Font size="60.0" />
                            </font>
                         </Text>
-                        <Text fx:id="generalInfections" layoutX="40.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ogólna liczba zakarzeń">
+                        <Text fx:id="generalInfections" layoutX="116.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ogólna liczba zakarzeń:">
                            <font>
                               <Font name="System Bold" size="27.0" />
                            </font>
                         </Text>
-                        <Text fx:id="generalRecovered" layoutX="40.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ogólna liczba zakarzeń">
+                        <Text fx:id="generalRecovered" layoutX="116.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ogólna liczba zakarzeń:">
                            <font>
                               <Font name="System Bold" size="27.0" />
                            </font>
                         </Text>
-                        <ImageView fitHeight="191.0" fitWidth="240.0" layoutX="639.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="191.0" fitWidth="240.0" layoutX="715.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../images/icons8_globe_showing_europe_africa_125px.png" />
                            </image>
                         </ImageView>
-                        <Text layoutX="362.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Polska:">
+                        <Text layoutX="438.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Polska:">
                            <font>
                               <Font size="60.0" />
                            </font>
                         </Text>
-                        <Text fx:id="todayInfections" layoutX="40.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liczba Infekcji Dzisiaj">
+                        <Text fx:id="todayInfections" layoutX="116.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liczba infekcji dzisiaj:">
                            <font>
                               <Font name="System Bold" size="27.0" />
                            </font>
                         </Text>
-                        <Text fx:id="todayDeaths" layoutX="41.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liczba zgonów dzisiaj">
+                        <Text fx:id="todayDeaths" layoutX="116.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liczba zgonów dzisiaj:">
                            <font>
                               <Font name="System Bold" size="27.0" />
                            </font>
                         </Text>
-                        <Text fx:id="deathsGenderMale" layoutX="40.0" layoutY="526.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zgony mezczyzni">
+                        <Text fx:id="deathsGenderMale" layoutX="116.0" layoutY="526.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zgony mezczyzni:">
                            <font>
                               <Font name="System Bold" size="27.0" />
                            </font>
                         </Text>
-                        <Text fx:id="deathsGenderFemale" layoutX="40.0" layoutY="574.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zgony kobiety">
+                        <Text fx:id="deathsGenderFemale" layoutX="116.0" layoutY="574.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zgony kobiety:">
                            <font>
                               <Font name="System Bold" size="27.0" />
                            </font>
                         </Text>
-                        <ImageView fitHeight="191.0" fitWidth="240.0" layoutX="658.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="191.0" fitWidth="240.0" layoutX="734.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../images/icons8_poland_125px.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="477.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="553.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../images/icons8_sneezing_in_a_tissue_125px.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="557.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="633.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../images/icons8_bandage_125px.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="352.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="428.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../images/icons8_death_125px.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="347.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="423.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../images/icons8_sneezing_in_a_tissue_125px.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="453.0" layoutY="492.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="529.0" layoutY="492.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../images/icons8_curly_hair_man_in_red_shirt_125px.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="453.0" layoutY="540.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="529.0" layoutY="540.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../images/icons8_nerd_hair_125px.png" />
                            </image>
                         </ImageView>
-                        <Text fx:id="deathsAgeRanges" layoutX="40.0" layoutY="623.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liczba smierci w przedziale:">
+                        <Text fx:id="deathsAgeRanges" layoutX="116.0" layoutY="623.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liczba smierci w przedziale:">
                            <font>
                               <Font name="System Bold" size="27.0" />
                            </font>
                         </Text>
-                        <ComboBox fx:id="comboList" layoutX="577.0" layoutY="590.0" onAction="#zmienTekst" prefHeight="48.0" prefWidth="186.0" promptText="Wybierz przedzial wiekowy">
+                        <ComboBox fx:id="comboList" layoutX="653.0" layoutY="590.0" onAction="#zmienTekst" prefHeight="48.0" prefWidth="186.0" promptText="Wybierz przedzial wiekowy">
                            <items>
                               <FXCollections fx:factory="observableArrayList">
                                  <String fx:value="0-10 lat" />
@@ -183,7 +183,7 @@
                               </FXCollections>
                            </items>
                         </ComboBox>
-                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="482.0" layoutY="594.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="558.0" layoutY="594.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../images/icons8_death_125px.png" />
                            </image>

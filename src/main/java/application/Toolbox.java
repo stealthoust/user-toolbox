@@ -16,8 +16,8 @@ import java.util.ResourceBundle;
 
 public class Toolbox implements Initializable {
     public ManagerCovid managerCovid;
-    public Button btn_covid;
-    public Button btn_waluta;
+    public Button btn_ccovid;
+    public Button btn_cwaluta;
     public Text generalDeaths;
     public Text generalInfections;
     public Text generalRecovered;
@@ -37,15 +37,15 @@ public class Toolbox implements Initializable {
         }
     }
 
-    public Button btn_pogoda;
+    public Button btn_cpogoda;
     public void okno_pogoda(ActionEvent actionEvent) {
         try
         {
-            ZmienOkno.zmienScene("weather.fxml", 1234, 704, btn_pogoda);
+            ZmienOkno.zmienScene("weather2.fxml", 1400, 704, btn_cpogoda);
         }
         catch (Exception e){
-
-            System.out.println("Błąd w wczytaniu okna");
+            e.printStackTrace();
+            //System.out.println("Błąd w wczytaniu okna");
         }
     }
 

@@ -44,7 +44,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("toolbox.fxml"));
         primaryStage.setTitle("Przybornik uzytkownika");
-        primaryStage.setScene(new Scene(root, 1234, 704));
+        primaryStage.setScene(new Scene(root, 1400, 704));
         //primaryStage.initStyle(StageStyle.UNDECORATED); //Pasek zadan
         primaryStage.show();
         primaryStage.setResizable(false);

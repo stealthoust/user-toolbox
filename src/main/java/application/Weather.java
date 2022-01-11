@@ -26,7 +26,7 @@ public class Weather implements Initializable {
     String miastoSet;
 
     @FXML
-    private Button szukajButton,btn_notatki,btn_waluty;
+    private Button szukajButton,btn_pcovid, btn_pwaluta;
     @FXML
     private TextField szukajMiejscowosc;
     @FXML
@@ -143,7 +143,7 @@ else {
     public void okno_waluta(ActionEvent actionEvent) {
         try
         {
-            ZmienOkno.zmienScene("toolbox.fxml", 1234, 704, btn_waluty);
+            ZmienOkno.zmienScene("toolbox.fxml", 1400, 704, btn_pwaluta);
         }
         catch (Exception e){
 
@@ -151,10 +151,10 @@ else {
         }
     }
 
-    public void okno_notatki(ActionEvent actionEvent) {
+    public void okno_covid(ActionEvent actionEvent) {
         try
         {
-            ZmienOkno.zmienScene("toolbox.fxml", 1234, 704, btn_notatki);
+            ZmienOkno.zmienScene("toolbox.fxml", 1400, 704, btn_pcovid);
         }
         catch (Exception e){
             System.out.println("Błąd w wczytaniu okna");
