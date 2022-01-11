@@ -44,6 +44,17 @@ public class Toolbox implements Initializable {
             ZmienOkno.zmienScene("weather2.fxml", 1400, 704, btn_cpogoda);
         }
         catch (Exception e){
+            System.out.println("Błąd w wczytaniu okna");
+        }
+    }
+
+
+    public void okno_waluta(ActionEvent actionEvent) {
+        try
+        {
+            ZmienOkno.zmienScene("Currency.fxml", 1400, 704, btn_cwaluta);
+        }
+        catch (Exception e){
             e.printStackTrace();
             //System.out.println("Błąd w wczytaniu okna");
         }

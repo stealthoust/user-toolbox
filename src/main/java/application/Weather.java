@@ -143,7 +143,7 @@ else {
     public void okno_waluta(ActionEvent actionEvent) {
         try
         {
-            ZmienOkno.zmienScene("toolbox.fxml", 1400, 704, btn_pwaluta);
+            ZmienOkno.zmienScene("Currency.fxml", 1400, 704, btn_pwaluta);
         }
         catch (Exception e){
 

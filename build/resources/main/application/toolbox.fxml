@@ -51,7 +51,7 @@
                      <VBox.margin>
                         <Insets />
                      </VBox.margin></Button>
-                  <Button fx:id="btn_cwaluta" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="336.0" styleClass="" text="Waluta" textFill="WHITE">
+                  <Button fx:id="btn_cwaluta" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#okno_waluta" prefHeight="120.0" prefWidth="336.0" styleClass="" text="Waluta" textFill="WHITE">
                      <font>
                         <Font name="Arial" size="36.0" />
                      </font>

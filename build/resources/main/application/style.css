@@ -79,3 +79,41 @@
 #btn_pcovid:pressed{
     -fx-background-color:#231c45;
 }
+
+/* Waluta */
+
+
+#btn_wwaluta{
+    -fx-background-color:#231c45;
+    -fx-background-radius: 0em;
+}
+/*#btn_covid:hover{*/
+/*    -fx-background-color:#6b3da6;*/
+/*}*/
+/*#btn_covid:pressed{*/
+/*    -fx-background-color:#441d75;*/
+/*}*/
+
+#btn_wcovid{
+    -fx-background-color:#985ee4;
+    -fx-background-radius: 0em;
+}
+#btn_wcovid:hover{
+    -fx-background-color:#6b3da6;
+}
+
+#btn_wcovid:pressed{
+    -fx-background-color:#231c45;
+}
+
+#btn_wpogoda{
+    -fx-background-color:#985ee4;
+    -fx-background-radius: 0em;
+}
+#btn_wpogoda:hover{
+    -fx-background-color:#6b3da6;
+}
+
+#btn_wpogoda:pressed{
+    -fx-background-color:#231c45;
+}

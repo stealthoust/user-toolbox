@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 import com.google.gson.Gson;
 
 
-public class getWaluta {
+public class ManagerWaluty {
     public static String BaseURL = "http://api.nbp.pl/api/exchangerates/rates/A/";
 
     public static double getKurs(String skrotWaluty) throws IOException, InterruptedException {
